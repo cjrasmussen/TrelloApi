@@ -25,6 +25,7 @@ class TrelloApi
 	 * @param string $request
 	 * @param array|null $args
 	 * @return mixed
+	 * @throws RuntimeException
 	 */
 	public function request($type, $request, ?array $args = [])
 	{
