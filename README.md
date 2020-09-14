@@ -1,4 +1,4 @@
-# TrelloAPI
+# trello
 
 Simple class for making requests to the Trello API.  Not affiliated with Trello or Atlassian.
 
@@ -6,9 +6,9 @@ Simple class for making requests to the Trello API.  Not affiliated with Trello 
 ## Usage
 
 ```php
-use cjrasmussen\TrelloAPI;
+use cjrasmussen\trello;
 
-$trello = new TrelloAPI($key, $token);
+$trello = new trello($key, $token);
 
 // GET THE CARD DATA FOR A SPECIFIED LIST
 $data = $trello->request('GET', "/1/lists/{$list_id}}/cards");
@@ -23,10 +23,10 @@ More examples, as well as other things I've learned using the Trello API, are [a
 
 ## Installation
 
-Simply add a dependency on cjrasmussen/TrelloAPI to your composer.json file if you use [Composer](https://getcomposer.org/) to manage the dependencies of your project:
+Simply add a dependency on cjrasmussen/trello to your composer.json file if you use [Composer](https://getcomposer.org/) to manage the dependencies of your project:
 
 ```sh
-composer require cjrasmussen/TrelloAPI
+composer require cjrasmussen/trello
 ```
 
 Although it's recommended to use Composer, you can actually include the file(s) any way you want.
@@ -34,4 +34,4 @@ Although it's recommended to use Composer, you can actually include the file(s) 
 
 ## License
 
-TrelloAPI is [MIT](http://opensource.org/licenses/MIT) licensed.
+trello is [MIT](http://opensource.org/licenses/MIT) licensed.
