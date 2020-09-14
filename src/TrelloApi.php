@@ -5,7 +5,6 @@ use RuntimeException;
 
 /**
  * Class Trello
- * @package O6
  */
 class TrelloApi
 {
