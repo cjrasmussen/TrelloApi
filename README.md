@@ -34,4 +34,4 @@ Although it's recommended to use Composer, you can actually include the file(s) 
 
 ## License
 
-Minify is [MIT](http://opensource.org/licenses/MIT) licensed.
+TrelloAPI is [MIT](http://opensource.org/licenses/MIT) licensed.
