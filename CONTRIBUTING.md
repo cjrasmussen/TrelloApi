@@ -3,7 +3,7 @@
 
 ## Issues
 
-When [filing bugs](https://github.com/cjrasmussen/TrelloAPI/issues/new),
+When [filing bugs](https://github.com/cjrasmussen/TrelloApi/issues/new),
 try to be as thorough as possible:
 * What version did you use?
 * What did you try to do? ***Please post the relevant parts of your code.***
@@ -17,9 +17,7 @@ Bug fixes and general improvements to the existing codebase are always welcome.
 New features are also welcome, but will be judged on an individual basis. If
 you'd rather not risk wasting your time implementing a new feature only to see
 it turned down, please start the discussion by
-[opening an issue](https://github.com/cjrasmussen/TrelloAPI/issues/new).
-
-Don't forget to add your changes to the [changelog](CHANGELOG.md).
+[opening an issue](https://github.com/cjrasmussen/TrelloApi/issues/new).
 
 
 ### Testing
@@ -30,5 +28,5 @@ someone to standards I don't hold myself to?  No.
 
 ## License
 
-Note that TrelloAPI is MIT-licensed, which basically allows anyone to do
+Note that TrelloApi is MIT-licensed, which basically allows anyone to do
 anything they like with it, without restriction.

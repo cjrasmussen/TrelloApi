@@ -7,7 +7,7 @@ use RuntimeException;
  * Class Trello
  * @package O6
  */
-class TrelloAPI
+class TrelloApi
 {
 	private $key;
 	private $token;
