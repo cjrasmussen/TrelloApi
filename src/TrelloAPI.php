@@ -1,13 +1,13 @@
 <?php
-namespace cjrasmussen\trello;
+namespace cjrasmussen\TrelloAPI;
 
 use RuntimeException;
 
 /**
- * Class trello
+ * Class Trello
  * @package O6
  */
-class trello
+class TrelloAPI
 {
 	private $key;
 	private $token;
