@@ -1,5 +1,5 @@
 {
-  "name": "cjrasmussen/trello",
+  "name": "cjrasmussen/trello-api",
   "type": "library",
   "description": "Simple helper for interacting with Trello's API",
   "keywords": ["Trello"],
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "cjrasmussen\\trello\\": "src/"
+      "cjrasmussen\\TrelloAPI\\": "src/"
     }
   }
 }
