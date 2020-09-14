@@ -1,0 +1,24 @@
+{
+  "name": "cjrasmussen/TrelloAPI",
+  "type": "library",
+  "description": "Simple helper for interacting with Trello's API",
+  "keywords": ["Trello"],
+  "homepage": "https://www.clarkrasmussen.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Clark Rasmussen",
+      "homepage": "https://www.clarkrasmussen.com",
+      "email": "me@cjr.dev",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "cjrasmussen\\TrelloAPI\\": "src/"
+    }
+  }
+}
