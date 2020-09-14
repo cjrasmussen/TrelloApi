@@ -1,5 +1,5 @@
 <?php
-namespace cjrasmussen\TrelloAPI;
+namespace cjrasmussen\TrelloApi;
 
 use RuntimeException;
 
