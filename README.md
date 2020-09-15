@@ -6,7 +6,7 @@ Simple class for making requests to the Trello API.  Not affiliated with Trello 
 ## Usage
 
 ```php
-use cjrasmussen\TrelloApi;
+use cjrasmussen\TrelloApi\TrelloApi;
 
 $trello = new TrelloApi($key, $token);
 

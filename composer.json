@@ -1,7 +1,7 @@
 {
   "name": "cjrasmussen/trello-api",
-  "type": "library",
   "description": "Simple helper for interacting with Trello's API",
+  "version": "1.0.1",
   "keywords": ["Trello"],
   "homepage": "https://www.clarkrasmussen.com",
   "license": "MIT",
@@ -9,10 +9,13 @@
     {
       "name": "Clark Rasmussen",
       "homepage": "https://www.clarkrasmussen.com",
-      "email": "me@cjr.dev",
       "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/cjrasmussen/TrelloApi/issues",
+    "source": "https://github.com/cjrasmussen/TrelloApi"
+  },
   "require": {
     "php": ">=7.1.0",
     "ext-curl": "*",
