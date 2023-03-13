@@ -19,7 +19,7 @@ $trello->request('PUT', "/1/cards/{$card_id}/closed", ['value' => true]);
 
 ## More Examples
 
-More examples, as well as other things I've learned using the Trello API, are [available at my blog](https://blog.cjr.dev/tag/trello-automation/).
+More examples, as well as other things I've learned using the Trello API, are [available at my blog](https://cjr.dev/tag/trello-automation/).
 
 ## Installation
 
