@@ -61,7 +61,8 @@ class TrelloApi
 		// DECODE THE RESPONSE INTO A GENERIC OBJECT
 		$data = json_decode($response);
 		if (json_last_error() !== JSON_ERROR_NONE) {
-			throw new RuntimeException('API response was not valid JSON');
+			$msg = 'API response "' . $response . '" was not valid JSON';
+			throw new RuntimeException($msg);
 		}
 
 		return $data;
