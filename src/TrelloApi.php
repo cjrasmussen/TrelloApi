@@ -1,17 +1,18 @@
 <?php
+
 namespace cjrasmussen\TrelloApi;
 
-use RuntimeException;
+use JsonException;
 
 /**
  * Class Trello
  */
 class TrelloApi
 {
-	private $key;
-	private $token;
+	private string $key;
+	private string $token;
 
-	public function __construct($key, $token)
+	public function __construct(string $key, string $token)
 	{
 		$this->key = $key;
 		$this->token = $token;
@@ -24,9 +25,9 @@ class TrelloApi
 	 * @param string $request
 	 * @param array|null $args
 	 * @return mixed
-	 * @throws RuntimeException
+	 * @throws JsonException
 	 */
-	public function request($type, $request, ?array $args = [])
+	public function request(string $type, string $request, ?array $args = [])
 	{
 		if (false !== strpos($request, '?')) {
 			$url = 'https://api.trello.com' . $request . '&key=' . $this->key . '&token=' . $this->token;
@@ -40,10 +41,6 @@ class TrelloApi
 		curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($c, CURLOPT_URL, $url);
 
-		if (count($args)) {
-			curl_setopt($c, CURLOPT_POSTFIELDS, http_build_query($args));
-		}
-
 		switch ($type) {
 			case 'POST':
 				curl_setopt($c, CURLOPT_POST, 1);
@@ -55,16 +52,13 @@ class TrelloApi
 				curl_setopt($c, CURLOPT_CUSTOMREQUEST, $type);
 		}
 
+		if (count($args)) {
+			curl_setopt($c, CURLOPT_POSTFIELDS, http_build_query($args));
+		}
+
 		$response = curl_exec($c);
 		curl_close($c);
 
-		// DECODE THE RESPONSE INTO A GENERIC OBJECT
-		$data = json_decode($response);
-		if (json_last_error() !== JSON_ERROR_NONE) {
-			$msg = 'API response "' . $response . '" was not valid JSON';
-			throw new RuntimeException($msg);
-		}
-
-		return $data;
+		return json_decode($response, false, 512, JSON_THROW_ON_ERROR);
 	}
 }

@@ -1,7 +1,7 @@
 {
   "name": "cjrasmussen/trello-api",
   "description": "Simple helper for interacting with Trello's API",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "keywords": ["Trello"],
   "license": "MIT",
   "authors": [
@@ -16,7 +16,7 @@
     "source": "https://github.com/cjrasmussen/TrelloApi"
   },
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=7.4.0",
     "ext-curl": "*",
     "ext-json": "*"
   },
