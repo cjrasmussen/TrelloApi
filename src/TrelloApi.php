@@ -54,6 +54,8 @@ class TrelloApi
 
 		if (count($args)) {
 			curl_setopt($c, CURLOPT_POSTFIELDS, http_build_query($args));
+		} elseif ($type === 'POST') {
+			curl_setopt($c, CURLOPT_POSTFIELDS, null);
 		}
 
 		$response = curl_exec($c);
